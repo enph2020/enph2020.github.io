@@ -16,7 +16,7 @@
 title: UBC Engineering Physics 2020
 description: > # this means to ignore newlines until "baseurl:"
   The official unofficial website for the Engineering Physics
-  class of 2020 of the UNiversity of British Columbia.
+  class of 2020 of the University of British Columbia.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  enph2020
