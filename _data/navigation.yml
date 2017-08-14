@@ -4,3 +4,28 @@ main:
     url: /about/
   - title: "Robot Competition"
     url: /robots/
+
+
+robots:
+  - &robots
+    title: "ENPH 253 Robot Competition"
+    url: /robots/
+    children:
+      - title: "Roberto"
+      - title: "Spectre"
+      - title: "Veronica Corningstone"
+      - title: "Pomme de Terror"
+      - title: "Lalo"
+      - title: "Linel Glitchy"
+      - title: "reneZ"
+      - title: "DACS"
+      - title: "Robo Erectus"
+      - title: "Magic School Bot"
+        url: https://walkervilleelementary.github.io/
+      - title: "Minimum Viable Product"
+        url: /robots/mvp/
+      - title: "LOAF"
+      - title: "Frankenbot"
+      - title: "Awesome-o"
+      - title: "Calvin"
+      - title: "The Wee Baby Seamus"

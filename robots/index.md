@@ -2,11 +2,12 @@
 layout: single
 title: ENPH 253 Robot Competition 2017
 permalink: /robots/
-on_navbar: true
+sidebar:
+  nav: robots
 ---
 
 Mission Impossible 8: Rogue Squishies
-=====================================
+-------------------------------------
 
 Sixteen teams of second-year Engineering Physics students have built self-driving cars to rescue six trapped secret agents by avoiding an alarmed door, scaling a narrow ramp, and rescuing the agents from a tank filled with water and sending the agents back to safety on a zipline. This is the 17th annual Engineering Physics robot competition!
 
