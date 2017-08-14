@@ -29,3 +29,43 @@ robots:
       - title: "Awesome-o"
       - title: "Calvin"
       - title: "The Wee Baby Seamus"
+
+robots/mvp:
+  - *robots
+
+  - title: Structural
+    url: /robots/mvp/structural/
+    children:
+      - title: "Chassis"
+        url: /robots/mvp/structural/#chassis
+      - title: "eBay"
+        url: /robots/mvp/structural/#ebay
+      - title: "Mounts"
+        url: /robots/mvp/structural/#mounts
+      - title: "Zipline"
+        url: /robots/mvp/structural/#zipline
+
+  - title: Mechanical
+    url: /robots/mvp/mechanical/
+    children:
+      - title: "Drivetrain"
+        url: /robots/mvp/mechanical/#drivetrain
+      - title: "Elevator"
+        url: /robots/mvp/mechanical/#elevator
+      - title: "Arm"
+        url: /robots/mvp/mechanical/#arm
+
+  - title: Electrical
+    url: /robots/mvp/electrical/
+    children:
+      - title: "H-Bridges"
+        url: /robots/mvp/electrical/#h-bridges
+      - title: "Routing"
+        url: /robots/mvp/electrical/#routing
+      - title: "IR Filter"
+        url: /robots/mvp/electrical/#ir-filter
+      - title: "Encoders"
+        url: /robots/mvp/electrical/#encoders
+
+  - title: Software
+    url: /robots/mvp/software/

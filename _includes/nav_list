@@ -31,7 +31,8 @@
             {% endif %}
 
             {% comment %} set "active" class on current page {% endcomment %}
-            {% if child.url == page.url %}
+            {% if child.url == page.url
+                or child.url contains "robots" and page.url contains child.url %}
               {% assign active = "active" %}
             {% else %}
               {% assign active = "" %}
