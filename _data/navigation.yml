@@ -27,12 +27,11 @@ robots:
       - title: "LOAF"
       - title: "Frankenbot"
       - title: "Awesome-o"
+        url: /robots/awesome-o/
       - title: "Calvin"
       - title: "The Wee Baby Seamus"
 
 robots/mvp:
-  - *robots
-
   - title: Structural
     url: /robots/mvp/structural/
     children:
@@ -44,7 +43,6 @@ robots/mvp:
         url: /robots/mvp/structural/#mounts
       - title: "Zipline"
         url: /robots/mvp/structural/#zipline
-
   - title: Mechanical
     url: /robots/mvp/mechanical/
     children:
@@ -54,7 +52,6 @@ robots/mvp:
         url: /robots/mvp/mechanical/#elevator
       - title: "Arm"
         url: /robots/mvp/mechanical/#arm
-
   - title: Electrical
     url: /robots/mvp/electrical/
     children:
@@ -66,6 +63,42 @@ robots/mvp:
         url: /robots/mvp/electrical/#ir-filter
       - title: "Encoders"
         url: /robots/mvp/electrical/#encoders
-
   - title: Software
     url: /robots/mvp/software/
+  - *robots
+
+robots/awesome-o:
+  - title: Structural
+    url: /robots/awesome-o/structural/
+    children:
+      - title: "Chassis"
+        url: /robots/awesome-o/structural/#chassis
+      - title: "eBay"
+        url: /robots/awesome-o/structural/#ebay
+      - title: "Mounts"
+        url: /robots/awesome-o/structural/#mounts
+      - title: "Zipline"
+        url: /robots/awesome-o/structural/#zipline
+  - title: Mechanical
+    url: /robots/awesome-o/mechanical/
+    children:
+      - title: "Drivetrain"
+        url: /robots/awesome-o/mechanical/#drivetrain
+      - title: "Elevator"
+        url: /robots/awesome-o/mechanical/#elevator
+      - title: "Arm"
+        url: /robots/awesome-o/mechanical/#arm
+  - title: Electrical
+    url: /robots/awesome-o/electrical/
+    children:
+      - title: "H-Bridges"
+        url: /robots/awesome-o/electrical/#h-bridges
+      - title: "Routing"
+        url: /robots/awesome-o/electrical/#routing
+      - title: "IR Filter"
+        url: /robots/awesome-o/electrical/#ir-filter
+      - title: "Encoders"
+        url: /robots/awesome-o/electrical/#encoders
+  - title: Software
+    url: /robots/awesome-o/software/
+  - *robots
