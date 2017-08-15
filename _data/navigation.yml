@@ -68,37 +68,39 @@ robots/mvp:
   - *robots
 
 robots/awesome-o:
-  - title: Structural
-    url: /robots/awesome-o/structural/
-    children:
-      - title: "Chassis"
-        url: /robots/awesome-o/structural/#chassis
-      - title: "eBay"
-        url: /robots/awesome-o/structural/#ebay
-      - title: "Mounts"
-        url: /robots/awesome-o/structural/#mounts
-      - title: "Zipline"
-        url: /robots/awesome-o/structural/#zipline
+  - title: Home
+    url: /robots/awesome-o/
+  - title: Gallery
+    url: /robots/awesome-o/gallery/
   - title: Mechanical
     url: /robots/awesome-o/mechanical/
     children:
-      - title: "Drivetrain"
-        url: /robots/awesome-o/mechanical/#drivetrain
-      - title: "Elevator"
-        url: /robots/awesome-o/mechanical/#elevator
-      - title: "Arm"
-        url: /robots/awesome-o/mechanical/#arm
+      - title: "Chassis"
+        url: /robots/awesome-o/mechanical/#chassis
+      - title: "Boom"
+        url: /robots/awesome-o/mechanical/#boom
+      - title: "Trolley"
+        url: /robots/awesome-o/mechanical/#trolley
+      - title: "Claw"
+        url: /robots/awesome-o/mechanical/#claw
+      - title: "Lift"
+        url: /robots/awesome-o/mechanical/#lift
   - title: Electrical
     url: /robots/awesome-o/electrical/
     children:
+      - title: "TINAH"
+        url: /robots/awesome-o/electrical/#tinah
+      - title: "Power Supply"
+        url: /robots/awesome-o/electrical/#power
       - title: "H-Bridges"
         url: /robots/awesome-o/electrical/#h-bridges
-      - title: "Routing"
-        url: /robots/awesome-o/electrical/#routing
       - title: "IR Filter"
         url: /robots/awesome-o/electrical/#ir-filter
-      - title: "Encoders"
-        url: /robots/awesome-o/electrical/#encoders
+      - title: "Sensors"
+        url: /robots/awesome-o/electrical/#sensors
   - title: Software
     url: /robots/awesome-o/software/
-  - *robots
+    children:
+      - title: "State Diagram"
+        url: /robots/awesome-o/software/#state
+

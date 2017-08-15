@@ -6,33 +6,45 @@ sidebar:
   nav: robots/awesome-o
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet gravida auctor. Quisque fringilla erat rutrum arcu tempor, ut lacinia ligula consectetur. Sed at ipsum congue, lobortis purus at, viverra dolor. Nullam ut pretium enim, ac efficitur justo. Ut et condimentum erat, ut porta libero. Vestibulum et accumsan lectus. Morbi sit amet scelerisque lacus. Aenean aliquet lacus sed mauris condimentum dapibus. Nunc in magna sed sem dignissim consequat id vel metus. Nunc sit amet quam orci. Ut pharetra vitae tortor sed elementum.
+We designed the electrical system to be as simple to troubleshoot as possible. Nearly all major PCB’s were placed at the back of the robot facing outward in an easily accessible position with all transistors, voltage regulators, and cabling connections installed on female connectors which were soldered to the PCB. 
+
+## [](){:name="tinah"} TINAH
+
+The robot uses a microcontroller system called the TINAH (**T**his **I**s **N**ot **A**rduino **H**ardware), which connects to an open-source IO board that is similar to an Arduino board.  The TINAH is equipped with four DC motor outputs, three servo motor outputs, and several digital and analog IO pins.  
+
+## [](){:name="power"} Power Supply
+
+The robot is powered by one three Lithium Polymer battery packs. One 14.8 V battery powers most of the electrical components on the robot and two 7.4 V batteries are connected in series to supply -14.8 V when needed. These batteries connect directly to a PCB which acts as the power supply for the entire robot. The PCB also has two sources of regulated 5 V from the 14.8 V battery which is used for servo motor power and comparator reference voltage.  
 
 ## [](){:name="h-bridges"} H-Bridges
 
-Eugene made these and they never failed! They're the only thing Eugene made! What a loser!
+The H-Bridge circuit allows the TINAH board to control a large current at 15V through to motors via it's 5V pulse width modulation outputs. There is one H-Bridge circuit for each of the four motor outputs on the robot. The circuit is powered directly from the 14.8 V LiPo battery (VCC) and the two inputs (“IN A” and “IN B”) are run from the motor outputs of the TINAH board. 
 
-![A white 3D-printed hemispherical skid for the front of our robot, with about a quarter of the hemisphere sliced off perpendicular to its base. When flipped upside-down, the bolts through the skid resemble eyes on a face and the sliced off plane resembles a mouth, so angry eyebrows were drawn on it with a blue marker. The skid is resting on a heavily cratered black surface.][angry white skid]
-
-## [](){:name="routing"} Routing
-
-Routing boards, shielding cables, power boards, MTA connectors, LCD screens, and ribbon cables oh my.
-
-Integer auctor risus et posuere pellentesque. Phasellus vestibulum interdum elit. Nunc facilisis ornare magna at porttitor. Sed rutrum tellus turpis, ut feugiat nunc fringilla ac. Sed sollicitudin interdum quam a commodo. In auctor tincidunt porta. Nulla eleifend interdum velit non porta.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eleifend nunc ac risus mollis semper. Phasellus congue efficitur nibh ut vulputate. Praesent non tortor quis nibh faucibus congue nec ac purus. Nullam rutrum, ante non fringilla tincidunt, erat nisl efficitur purus, in imperdiet turpis sapien eget est. Nullam vitae blandit ipsum, sed varius justo. Vivamus eget ipsum accumsan, aliquam justo ac, placerat sem. Integer sit amet sem convallis, tincidunt dolor ut, imperdiet dui. Aenean tincidunt elementum libero. Vestibulum facilisis ut odio sit amet vestibulum.
+<p style="text-align:center;"><img src="/assets/images/robots/awesome-o/zener_h_bridge.jpg" alt="Drawing" align = "middle"/> </p>
 
 ## [](){:name="ir-filter"} IR Filter
 
-The only reason it didn't work was because software sucked. More angry skid time.
+(**INSERT IR DESCRIPTION AND PHOTO HERE**)
 
-![A purple 3D-printed hemispherical skid for the front of our robot. When flipped upside-down, the countersunk boltholes resemble eyes on a face, so angry eyebrows and a mouth were drawn on it with a black sharpie. The skid is held against a backdrop of MVP members reattaching the arm to the chassis.][angry purple skid]
+## [](){:name="sensors"} Sensors
 
-Duis dictum fermentum sem, eget posuere tortor fringilla quis. Aliquam auctor nisl risus, sit amet ornare nisl placerat ut. In hac habitasse platea dictumst. Ut varius, lacus volutpat faucibus commodo, ante ipsum viverra orci, in sodales purus nisl at erat. Curabitur molestie interdum purus dapibus tempus. Morbi imperdiet sed risus a pretium. Curabitur elementum eu sapien ut ultricies. Integer sapien velit, malesuada et mollis sagittis, gravida a metus.
+Our robot employed thirteen sensors to deliver critical information about the status of the robot and it's location on the course.
 
-## [](){:name="encoders"} Encoders
+**Reflectivity Sensors**
+    - These sensors are used in various locations around the robot for the purposes of line-following and crane movement feedback. Two central sensors serve as the robot’s primary means of following the line on the obstacle course. Two more sensors are installed on either side of those which give the robot the ability to detect the agent retrieval points. Two sensors are installed on each of the front corners to allow for proper navigation of sharp turns and extra detection in difficult areas of the course. Two more sensors are installed on the trolley, which give feedback of the location of the trolley and claw block. White and black tape is installed along the boom as well as at the back of the claw block which allow the sensors to pick up specific horizontal and vertical locations of the crane.	
 
-Duis sed dolor dolor. Mauris varius viverra sapien, in condimentum ex venenatis sit amet. Phasellus egestas tincidunt ligula. Duis ut justo at felis maximus hendrerit eu non nisi. Quisque vitae dictum justo. Nulla metus nulla, efficitur eu euismod eget, scelerisque vel metus. Integer lobortis sit amet massa in aliquet. Fusce tempor accumsan sapien, sit amet interdum libero laoreet ut. Pellentesque scelerisque lectus velit, et posuere nibh semper ut. Praesent id luctus urna. Proin faucibus nisl eget nibh hendrerit eleifend sed iaculis est.
+<img src="/assets/images/robots/awesome-o/front_sensors_1.jpg" alt="Drawing" align ="middle"/>
+
+**Infrared Detection Sensors**
+	- Our robot employed an infrared detection sensor, coupled with an IR filtering circuit (see [IR Filtering](/robots/awesome-o/electrical/#ir-filter)) to detect changes in the status of the alarmed gateway.
+
+<img src="/assets/images/robots/awesome-o/IR_2.jpg" alt="Drawing" align ="middle" width ="500"/>
+	
+**Limit Switches**
+    - Four limit switches are installed on the robot to provide feedback for certain processes. One switch is used at the trolley, claw block, and the lift to limit their movement past a practical point. They are installed such that maximum movement in a given direction is detected and motor operation can be disabled. A final switch is installed behind the lift mechanism. It is placed in such a way as to activate once the robot reaches the zipline with the lift fully extended.
+	
+<img src="/assets/images/robots/awesome-o/claw_mechanism_2.jpg" alt="Drawing" align ="middle"/>
+
 
 [angry purple skid]: /assets/images/robots/awesome-o/angry_purple_skid.jpg
 [angry white skid]: /assets/images/robots/awesome-o/angry_white_skid.jpg
