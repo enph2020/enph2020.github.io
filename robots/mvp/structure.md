@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Structural Design
-permalink: /robots/mvp/structural/
+title: Structure
+permalink: /robots/mvp/structure/
 sidebar:
   nav: robots/mvp
 ---
@@ -28,12 +28,6 @@ Proin vel leo libero. Proin eu ipsum ultricies, varius urna eu, interdum nisi. P
 - battery mount
 
 ![A purple 3D-printed hemispherical skid for the front of our robot. When flipped upside-down, the countersunk boltholes resemble eyes on a face, so angry eyebrows and a mouth were drawn on it with a black sharpie. The skid is held against a backdrop of MVP members reattaching the arm to the chassis.][angry purple skid]
-
-## [](){:name="zipline"} Zipline
-
-Aliquam erat volutpat. Aliquam pharetra risus et felis volutpat gravida. Ut varius vitae est non volutpat. Fusce convallis scelerisque sodales. Ut vel dui ante. Etiam quis est scelerisque, ultrices tellus eu, pellentesque mi. Vivamus hendrerit, sapien at placerat ultricies, purus dui luctus lorem, eu fermentum ipsum leo eget augue. Sed molestie massa eu erat faucibus imperdiet in eget sem. Cras consectetur pretium pretium. Ut tincidunt, sapien nec eleifend ultrices, purus mi mollis ligula, ac eleifend mi ligula et orci. Cras pulvinar nunc tortor, et scelerisque odio vulputate eget. Duis nec sodales orci, non tincidunt risus.
-
-Pellentesque egestas eu risus a molestie. Pellentesque in vehicula quam. Ut ipsum tortor, posuere eget varius quis, tempor id urna. Aliquam erat volutpat. Praesent posuere tortor eu risus dignissim, id tincidunt nunc ultrices. Fusce vitae sollicitudin risus, eget varius massa. Pellentesque vel pretium justo. Etiam dapibus erat ante, at dignissim magna mattis vitae. Suspendisse vel quam sit amet diam lacinia scelerisque. Duis vitae sem cursus, maximus ex et, tempus urna. Vestibulum mollis, nibh vestibulum mollis bibendum, diam ante laoreet sem, non placerat nunc sapien vitae nulla.
 
 [angry purple skid]: /assets/images/robots/mvp/angry_purple_skid.jpg
 [angry white skid]: /assets/images/robots/mvp/angry_white_skid.jpg
