@@ -5,104 +5,111 @@
   - file: gallery1.jpg
     thumb: gallery1.jpg
     text: Picture 1
+    caption: Picture 1
   - file: gallery2.jpg
     thumb: gallery2.jpg
     text: Picture 2
+    caption: Picture 2
   - file: gallery3.jpg
     thumb: gallery3.jpg
     text: Picture 3
+    caption: Picture 3
   - file: gallery4.jpg
     thumb: gallery4.jpg
     text: Picture 4
+    caption: Picture 4
   - file: gallery5.jpg
     thumb: gallery5.jpg
     text: Picture 5
+    caption: Picture 5
   - file: gallery6.jpg
     thumb: gallery6.jpg
     text: Picture 6
+    caption: Picture 6
   - file: gallery7.png
     thumb: gallery7thumb.png
     text: Picture 7
+    caption: Picture 7
   - file: gallery8.png
     thumb: gallery8thumb.png
     text: Picture 8
+    caption: Picture 8
 
 - id: robots/awesome-o
-  description: This is a gallery of images for Awesome-O!
   image_folder: /assets/images/robots/awesome-o/
   images:
   - file: side_view_1.jpg
     thumb: side_view_1.jpg
-    text: Side View 1
+    caption: Side View 1
   - file: side_view_2.jpg
     thumb: side_view_2.jpg
-    text: Side View 2
+    caption: Side View 2
   - file: side_view_3.jpg
     thumb: side_view_3.jpg
-    text: Side View 3
+    caption: Side View 3
   - file: side_view_4.jpg
     thumb: side_view_4.jpg
-    text: Side View 4
+    caption: Side View 4
   - file: side_view_5.jpg
     thumb: side_view_5.jpg
-    text: Side View 5
+    caption: Side View 5
   - file: claw_block_2.jpg
     thumb: claw_block_2.jpg
-    text: Claw Block 2
+    caption: Claw Block 2
   - file: claw_gears_1.jpg
     thumb: claw_gears_1.jpg
-    text: Claw Gears 1
+    caption: Claw Gears 1
   - file: claw_mechanism_1.jpg
     thumb: claw_mechanism_1.jpg
-    text: Claw Mechanism 1
+    caption: Claw Mechanism 1
   - file: claw_gears_2.jpg
     thumb: claw_gears_2.jpg
-    text: Claw Gears 2
+    caption: Claw Gears 2
   - file: front_sensors_1.jpg
     thumb: front_sensors_1.jpg
-    text: Front Sensors 1
+    caption: Front Sensors 1
   - file: front_sensors_2.jpg
     thumb: front_sensors_2.jpg
-    text: Front Sensors 2
+    caption: Front Sensors 2
   - file: front_sensors_3.jpg
     thumb: front_sensors_3.jpg
-    text: Front Sensors 3
+    caption: Front Sensors 3
   - file: lift_mechanism_1.jpg
     thumb: lift_mechanism_1.jpg
-    text: Lift Mechanism 1
+    caption: Lift Mechanism 1
   - file: lift_gears_1.jpg
     thumb: lift_gears_1.jpg
-    text: Lift Gears 1
+    caption: Lift Gears 1
   - file: rear_1.jpg
     thumb: rear_1.jpg
-    text: Rear 1
+    caption: Rear 1
   - file: rear_2.jpg
     thumb: rear_2.jpg
-    text: Rear 2
+    caption: Rear 2
   - file: rear_gear_1.jpg
     thumb: rear_gear_1.jpg
-    text: Rear Gear 1
+    caption: Rear Gear 1
   - file: rear_gear_2.jpg
     thumb: rear_gear_2.jpg
-    text: Rear Gear 2
+    caption: Rear Gear 2
   - file: rear_gear_close.jpg
     thumb: rear_gear_close.jpg
-    text: Rear Gear Close
+    caption: Rear Gear Close
   - file: underneath_1.jpg
     thumb: underneath_1.jpg
-    text: Underneath 1
+    caption: Underneath 1
   - file: underneath_2.jpg
     thumb: underneath_2.jpg
-    text: Underneath 2
+    caption: Underneath 2
   - file: tinah_1.jpg
     thumb: tinah_1.jpg
-    text: TINAH 1
+    caption: TINAH 1
   - file: top_view_1.jpg
     thumb: top_view_1.jpg
-    text: Top View 1
+    caption: Top View 1
   - file: tower_top_1.jpg
     thumb: tower_top_1.jpg
-    text: Tower Top 1
+    caption: Tower Top 1
   - file: side_view_6.jpg
     thumb: side_view_6.jpg
-    text: Side View 6
+    caption: Side View 6
