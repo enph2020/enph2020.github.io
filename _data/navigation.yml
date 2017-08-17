@@ -110,7 +110,7 @@ robots/mvp:
 
 robots/awesome-o:
   - title: Awesome-O
-    url: /robots/mvp/
+    url: /robots/awesome-o/
   - title: Gallery
     url: /robots/awesome-o/gallery/
   - title: Mechanical
