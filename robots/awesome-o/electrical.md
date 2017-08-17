@@ -16,6 +16,9 @@ The robot uses a microcontroller system called the TINAH (**T**his **I**s **N**o
 
 The robot is powered by one three Lithium Polymer battery packs. One 14.8 V battery powers most of the electrical components on the robot and two 7.4 V batteries are connected in series to supply -14.8 V when needed. These batteries connect directly to a PCB which acts as the power supply for the entire robot. The PCB also has two sources of regulated 5 V from the 14.8 V battery which is used for servo motor power and comparator reference voltage.
 
+<p style="text-align:center;"><img src="/assets/images/robots/awesome-o/power_pcb.jpg" alt="Drawing" align = "middle"/> </p>
+
+
 ## [](){:name="h-bridges"} H-Bridges
 
 The H-Bridge circuit allows the TINAH board to control a large current at 15V through to motors via it's 5V pulse width modulation outputs. There is one H-Bridge circuit for each of the four motor outputs on the robot. The circuit is powered directly from the 14.8 V LiPo battery (VCC) and the two inputs (“IN A” and “IN B”) are run from the motor outputs of the TINAH board.
@@ -24,7 +27,10 @@ The H-Bridge circuit allows the TINAH board to control a large current at 15V th
 
 ## [](){:name="ir-filter"} IR Filter
 
-(**INSERT IR DESCRIPTION AND PHOTO HERE**)
+The robot is equipped with an IR detection system which, after amplifying the incoming signal, utilizes two sets of bandpass filters and peak detection circuits to read 1 and 10 kHz IR signals. The two outputs are then run to a comparator which outputs a digital signal that the robot can interpret in order to distinguish between the 1 kHz and 10 kHz and respond appropriately.
+
+<p style="text-align:center;"><img src="/assets/images/robots/awesome-o/IR_diagram.png" alt="Drawing" align = "middle"/> </p>
+
 
 ## [](){:name="sensors"} Sensors
 
