@@ -16,13 +16,10 @@ robots:
       - title: "Veronica Corningstone"
       - title: "Pomme de Terror"
         url: /robots/potato/
-        children:
-          - title: "Official Site"
-            url: https://kaitaitong.github.io/pommedeterror/
       - title: "Lalo"
       - title: "Linel Glitchy"
       - title: "reneZ"
-        url: https://zenerenez.github.io/
+        url: /robots/renez/
       - title: "DACS"
       - title: "Robo Erectus"
       - title: "Magic School Bot"
@@ -36,9 +33,28 @@ robots:
       - title: "Calvin"
       - title: "The Wee Baby Seamus"
 
+robots/renez:
+  - title: reneZ
+    url: /robots/renez/
+    children:
+      - title: Official Site
+        url: https://zenerenez.github.io/
+  - title: Gallery
+    url: /robots/renez/gallery/
+  - title: Mechanical
+    url: /robots/renez/mechanical/
+  - title: Electrical
+    url: /robots/renez/electrical/
+  - title: Software
+    url: /robots/renez/software/
+  - *robots
+
 robots/potato:
   - title: Pomme de Terror
     url: /robots/potato/
+    children:
+      - title: Official Site
+        url: https://kaitaitong.github.io/pommedeterror/
   - title: Mechanical
     url: /robots/potato/mechanical/
     children:

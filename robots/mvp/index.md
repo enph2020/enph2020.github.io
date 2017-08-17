@@ -5,6 +5,7 @@ permalink: /robots/mvp/
 sidebar:
   nav: robots/mvp
 ---
+
 This is the official page for Team 11's robot, Minimal Viable Product. We lost badly. Here are some reaction faces:
 
 ![A purple 3D-printed hemispherical skid for the front of our robot. When flipped upside-down, the countersunk boltholes resemble eyes on a face, so angry eyebrows and a mouth were drawn on it with a black sharpie. The skid is held against a backdrop of MVP members reattaching the arm to the chassis.][angry purple skid]
