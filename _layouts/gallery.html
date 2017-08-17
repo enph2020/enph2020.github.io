@@ -11,7 +11,7 @@ layout: single
       {% for image in gallery.images %}
         <div class="cell">
           {{ image.text }}
-          <a href="{{ gallery.image_folder }}{{ image.file }}" data-lightbox="{{ gallery.id }}" title="{{ image.text }}">
+          <a href="{{ gallery.image_folder }}{{ image.file }}" data-lightbox="{{ gallery.id }}" title="{{ image.caption }}">
             <img src="{{ gallery.image_folder }}{{ image.thumb }}">
           </a>
         </div>
