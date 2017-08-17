@@ -1,7 +1,15 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @charset "utf-8";
-
 @import "minimal-mistakes";
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  .cell {
+    flex-basis: 33%;
+    border: 0.5px black solid;
+    padding: 5px;
+  }
+}
