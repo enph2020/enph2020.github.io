@@ -19,10 +19,10 @@ The robots' official websites and videos are listed below:
 1. **Roberto**, by Isaac, Quinn, Wilson, Nishad
 2. **Spectre**, by Zara, Svena, Arthur, Esther
 3. **[Veronica Corningstone][]**, by Maryam, Amber, Shannon, Paula
-4. **Pomme de Terror**, by Tomo, Joel, Kaitai, Paul (First Place)
+4. **[Pomme de Terror][]**, by Tomo, Joel, Kaitai, Paul (First Place)
 5. **Lalo**, by Tiffany, Owen, Dante, Sydney
 6. **Linel Glitchy**, by Ryley, Toren, Theo, Jessica
-7. **reneZ**, by Dylan, Masayoshi, Forest, Yuni (Fourth Place)
+7. **[reneZ][]**, by Dylan, Masayoshi, Forest, Yuni (Fourth Place)
 8. **DACS**, by Daymon, Sonny, Aidan, Chris (Second Place)
 9. **Robo Erectus**, by Vitor, Andrew, Artem
 10. **[Magic School Bot][]**, by Cindy, Lise, Jason, Amar (Third Place)
@@ -39,6 +39,10 @@ The robots' official websites and videos are listed below:
                           "ENPH 253 Robot Competition 2017 Surface"
 [veronica corningstone]:  https://channel4robotteam.github.io/
                           "Veronica Corningstone"
+[pomme de terror]:        https://kaitaitong.github.io/pommedeterror/
+                          "Pomme de Terror"
+[renez]:                  https://zenerenez.github.io/
+                          "reneZ"
 [magic school bot]:       https://walkervilleelementary.github.io/
                           "Magic School Bot"
 [minimum viable product]: /robots/mvp/

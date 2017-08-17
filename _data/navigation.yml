@@ -15,9 +15,11 @@ robots:
       - title: "Spectre"
       - title: "Veronica Corningstone"
       - title: "Pomme de Terror"
+        url: https://kaitaitong.github.io/pommedeterror/
       - title: "Lalo"
       - title: "Linel Glitchy"
       - title: "reneZ"
+        url: https://zenerenez.github.io/
       - title: "DACS"
       - title: "Robo Erectus"
       - title: "Magic School Bot"
@@ -32,6 +34,8 @@ robots:
       - title: "The Wee Baby Seamus"
 
 robots/mvp:
+  - title: Minimal Viable Product
+    url: /robots/mvp/
   - title: Structural
     url: /robots/mvp/structural/
     children:
@@ -68,8 +72,8 @@ robots/mvp:
   - *robots
 
 robots/awesome-o:
-  - title: Home
-    url: /robots/awesome-o/
+  - title: Awesome-O
+    url: /robots/mvp/
   - title: Gallery
     url: /robots/awesome-o/gallery/
   - title: Mechanical
