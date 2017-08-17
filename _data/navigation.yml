@@ -15,7 +15,10 @@ robots:
       - title: "Spectre"
       - title: "Veronica Corningstone"
       - title: "Pomme de Terror"
-        url: https://kaitaitong.github.io/pommedeterror/
+        url: /robots/potato/
+        children:
+          - title: "Official Site"
+            url: https://kaitaitong.github.io/pommedeterror/
       - title: "Lalo"
       - title: "Linel Glitchy"
       - title: "reneZ"
@@ -32,6 +35,24 @@ robots:
         url: /robots/awesome-o/
       - title: "Calvin"
       - title: "The Wee Baby Seamus"
+
+robots/potato:
+  - title: Pomme de Terror
+    url: /robots/potato/
+  - title: Mechanical
+    url: /robots/potato/mechanical/
+    children:
+      - title: "Chassis"
+        url: /robots/potato/mechanical/#chassis
+      - title: "Claw"
+        url: /robots/potato/mechanical/#claw
+      - title: "Lifting Mechanism"
+        url: /robots/potato/mechanical/#lift
+  - title: Electrical
+    url: /robots/potato/electrical/
+  - title: Software
+    url: /robots/potato/software/
+  - *robots
 
 robots/mvp:
   - title: Minimal Viable Product
