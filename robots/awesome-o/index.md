@@ -8,7 +8,7 @@ sidebar:
 
 During the ENPH 253 Robot Design Competition, our team designed, built and deployed an autonomous robot tasked with navigating an obstacle course. The robot was required to pass through an alarmed door, traversing a narrow ramp, then retrievie six plastic toys from a large tub and deploy them down a zipline. Over the course of 6 weeks, we were able to produce a working robot which could overcome all aspects of this course.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=pvgh8AvOyz8&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pvgh8AvOyz8" frameborder="0" allowfullscreen></iframe>
 
 This site outlines the specifications of our robot, as well as the design and manufacturing process which made our robot a success.
 
