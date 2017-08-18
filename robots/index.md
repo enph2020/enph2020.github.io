@@ -53,4 +53,3 @@ The robots' websites and videos are listed below:
                             "Minimum Viable Product"
 [awesome-o]:                /robots/awesome-o/
                             "Awesome-o"
->>>>>>> 6e8cf777faf1f300ce4a609f5074414a588006bd
