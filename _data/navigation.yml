@@ -73,26 +73,26 @@ robots/potato:
 robots/mvp:
   - title: Minimal Viable Product
     url: /robots/mvp/
-  - title: Structural
-    url: /robots/mvp/structural/
+  - title: Structure
+    url: /robots/mvp/structure/
     children:
       - title: "Chassis"
-        url: /robots/mvp/structural/#chassis
+        url: /robots/mvp/structure/#chassis
       - title: "eBay"
-        url: /robots/mvp/structural/#ebay
+        url: /robots/mvp/structure/#ebay
       - title: "Mounts"
-        url: /robots/mvp/structural/#mounts
-      - title: "Zipline"
-        url: /robots/mvp/structural/#zipline
-  - title: Mechanical
-    url: /robots/mvp/mechanical/
+        url: /robots/mvp/structure/#mounts
+  - title: Components
+    url: /robots/mvp/components/
     children:
       - title: "Drivetrain"
-        url: /robots/mvp/mechanical/#drivetrain
+        url: /robots/mvp/components/#drivetrain
+      - title: "Agent Evacuation Vehicle"
+        url: /robots/mvp/components/#aev
       - title: "Elevator"
-        url: /robots/mvp/mechanical/#elevator
+        url: /robots/mvp/components/#elevator
       - title: "Arm"
-        url: /robots/mvp/mechanical/#arm
+        url: /robots/mvp/components/#arm
   - title: Electrical
     url: /robots/mvp/electrical/
     children:

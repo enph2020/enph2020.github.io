@@ -6,33 +6,40 @@ sidebar:
   nav: robots/mvp
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet gravida auctor. Quisque fringilla erat rutrum arcu tempor, ut lacinia ligula consectetur. Sed at ipsum congue, lobortis purus at, viverra dolor. Nullam ut pretium enim, ac efficitur justo. Ut et condimentum erat, ut porta libero. Vestibulum et accumsan lectus. Morbi sit amet scelerisque lacus. Aenean aliquet lacus sed mauris condimentum dapibus. Nunc in magna sed sem dignissim consequat id vel metus. Nunc sit amet quam orci. Ut pharetra vitae tortor sed elementum.
-
 ## [](){:name="h-bridges"} H-Bridges
 
-Eugene made these and they never failed! They're the only thing Eugene made! What a loser!
+H-bridges are necessary for bi-directional motor control. The TINAH has built-in H-bridges, but they cannot handle the current load needed to drive a 4-kilogram robot around the competition surface in 35 seconds, so we had to solder our own.
 
-![A white 3D-printed hemispherical skid for the front of our robot, with about a quarter of the hemisphere sliced off perpendicular to its base. When flipped upside-down, the bolts through the skid resemble eyes on a face and the sliced off plane resembles a mouth, so angry eyebrows were drawn on it with a blue marker. The skid is resting on a heavily cratered black surface.][angry white skid]
+Since nothing else could be changed, we decided to minimize the size of our H-bridges, and came up with a compact breadboard diagram of the traditional H-bridge design.
+
+However, the modified design using Zener diodes was much smaller, as it used Zener diodes instead of BJTs, so we decided to only make those.
+
+Male header pins on the H-bridges fit into female header pins on the drivetrain circuit board for a fully modular H-bridge replacement system.
+
+Ultimately, we never replaced any H-bridges, because all of them worked, all the time!
 
 ## [](){:name="routing"} Routing
 
-Routing boards, shielding cables, power boards, MTA connectors, LCD screens, and ribbon cables oh my.
+The [electronics bay][] is rather small, as we decided to keep all the electronics wholly inside the chassis, both to protect them against water damage and for aesthetic appeal.
 
-Integer auctor risus et posuere pellentesque. Phasellus vestibulum interdum elit. Nunc facilisis ornare magna at porttitor. Sed rutrum tellus turpis, ut feugiat nunc fringilla ac. Sed sollicitudin interdum quam a commodo. In auctor tincidunt porta. Nulla eleifend interdum velit non porta.
+Therefore, creating properly organized connections between boards was a necessity. The heart of our circuitry is the routing board, which connects circuit boards between the TINAH and each other.
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eleifend nunc ac risus mollis semper. Phasellus congue efficitur nibh ut vulputate. Praesent non tortor quis nibh faucibus congue nec ac purus. Nullam rutrum, ante non fringilla tincidunt, erat nisl efficitur purus, in imperdiet turpis sapien eget est. Nullam vitae blandit ipsum, sed varius justo. Vivamus eget ipsum accumsan, aliquam justo ac, placerat sem. Integer sit amet sem convallis, tincidunt dolor ut, imperdiet dui. Aenean tincidunt elementum libero. Vestibulum facilisis ut odio sit amet vestibulum.
+We made copious use of MTA connectors and ribbon cables to easily connect and disconnect various connections all at once. We also used shielded cables both for shielding and for the sake of neatness.
 
-## [](){:name="ir-filter"} IR Filter
+Finally, the power board separates the various voltage levels in the robot in a star pattern. In particular, the two 8-volt batteries to the infrared filter circuit were completely separated from everything else in an effort to reduce noise.
 
-The only reason it didn't work was because software sucked. More angry skid time.
+## [](){:name="ir-filter"} Infrared Filter
 
-![A purple 3D-printed hemispherical skid for the front of our robot. When flipped upside-down, the countersunk boltholes resemble eyes on a face, so angry eyebrows and a mouth were drawn on it with a black sharpie. The skid is held against a backdrop of MVP members reattaching the arm to the chassis.][angry purple skid]
+The infrared filter circuit takes in infrared beacon signals from a QSD124 phototransistor and determines whether the infrared beacon is pulsing at 1 kHz or 10 kHz.
 
-Duis dictum fermentum sem, eget posuere tortor fringilla quis. Aliquam auctor nisl risus, sit amet ornare nisl placerat ut. In hac habitasse platea dictumst. Ut varius, lacus volutpat faucibus commodo, ante ipsum viverra orci, in sodales purus nisl at erat. Curabitur molestie interdum purus dapibus tempus. Morbi imperdiet sed risus a pretium. Curabitur elementum eu sapien ut ultricies. Integer sapien velit, malesuada et mollis sagittis, gravida a metus.
+The circuit uses two band-pass filters and two peak detectors to feed analog signals into the TINAH&mdash;one at 1 kHZ and one at 10 kHz. We made two infrared filter circuits in order to better triangulate the location of the infrared beacon.
+
+Ultimately, we did not need to use the infrared beacon location, but we kept both infrared filter circuits just in case. The whole circuit board fit right inside the electronics bay.
 
 ## [](){:name="encoders"} Encoders
 
-Duis sed dolor dolor. Mauris varius viverra sapien, in condimentum ex venenatis sit amet. Phasellus egestas tincidunt ligula. Duis ut justo at felis maximus hendrerit eu non nisi. Quisque vitae dictum justo. Nulla metus nulla, efficitur eu euismod eget, scelerisque vel metus. Integer lobortis sit amet massa in aliquet. Fusce tempor accumsan sapien, sit amet interdum libero laoreet ut. Pellentesque scelerisque lectus velit, et posuere nibh semper ut. Praesent id luctus urna. Proin faucibus nisl eget nibh hendrerit eleifend sed iaculis est.
+We tried to use rotary encoders to get more information about the velocity and displacement of our robot over time. Unfortunately, there was too much noise in the circuit to get any useful signals, and ultimately we did not need to use the encoders either.
 
 [angry purple skid]: /assets/images/robots/mvp/angry_purple_skid.jpg
 [angry white skid]: /assets/images/robots/mvp/angry_white_skid.jpg
+[electronics bay]: /robots/mvp/structure/#ebay
