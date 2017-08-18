@@ -17,7 +17,7 @@ Sixteen teams of second-year Engineering Physics students have built self-drivin
 The robots' official websites and videos are listed below:
 
 1. **Roberto**, by Isaac, Quinn, Wilson, Nishad
-2. **Spectre**, by Zara, Svena, Arthur, Esther
+2. **[Spectre][]**, by Zara, Svena, Arthur, Esther
 3. **[Veronica Corningstone][]**, by Maryam, Amber, Shannon, Paula
 4. **Pomme de Terror**, by Tomo, Joel, Kaitai, Paul (First Place)
 5. **Lalo**, by Tiffany, Owen, Dante, Sydney
@@ -37,6 +37,8 @@ The robots' official websites and videos are listed below:
                           "ENPH 253 Robot Competition 2017 Rules"
 [competition surface]:    https://docs.google.com/presentation/d/1Zq1h-U5V65wfgOsXi52bYinM7WvM4npjl62TxhXiBRM/
                           "ENPH 253 Robot Competition 2017 Surface"
+[spectre]:                /robots/spectre/
+                          "Spectre"
 [veronica corningstone]:  https://channel4robotteam.github.io/
                           "Veronica Corningstone"
 [magic school bot]:       https://walkervilleelementary.github.io/
