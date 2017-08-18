@@ -13,6 +13,7 @@ robots:
     children:
       - title: "Roberto"
       - title: "Spectre"
+        url: /robots/spectre
       - title: "Veronica Corningstone"
       - title: "Pomme de Terror"
         url: /robots/potato/
@@ -32,6 +33,34 @@ robots:
         url: /robots/awesome-o/
       - title: "Calvin"
       - title: "The Wee Baby Seamus"
+
+robots/spectre:
+  - title: Mechanical
+    url: /robots/spectre/#mechanical
+    children:
+    - title: "Chassis"
+      url: /robots/spectre/#chassis
+    - title: "Robotic Arm"
+      url: /robots/spectre/#arm
+  - title: Electrical
+    url: /robots/spectre/#electrical
+    children:
+    - title: "Central Panel: Bex"
+      url: /robots/spectre/#bex
+    - title: "H-Bridges"
+      url: /robots/spectre/#h-bridges
+    - title: "IR Sensors"
+      url: /robots/spectre/#ir-sensors
+  - title: Software
+    url: /robots/spectre/#software
+    children:
+    - title: "TINAH"
+      url: /robots/spectre/#tinah
+    - title: "Control"
+      url: /robots/spectre/#control
+    - title: "Encoders"
+      url: /robots/spectre/#encoders
+  - *robots
 
 robots/renez:
   - title: reneZ
