@@ -33,26 +33,12 @@ The robots' websites and videos are listed below:
 15. **Calvin**, by Keenan, Glyn, Austin
 16. **The Wee Baby Seamus**, by Declan, Justin, Coleman, Aaron
 
-<<<<<<< HEAD
-[competition rules]:      https://docs.google.com/document/d/1g9UG_ID7YxdN3Vdt_oRrXJgGzr4VSbbwLGS0zG9mbSA/
-                          "ENPH 253 Robot Competition 2017 Rules"
-[competition surface]:    https://docs.google.com/presentation/d/1Zq1h-U5V65wfgOsXi52bYinM7WvM4npjl62TxhXiBRM/
-                          "ENPH 253 Robot Competition 2017 Surface"
-[spectre]:                /robots/spectre/
-                          "Spectre"
-[veronica corningstone]:  https://channel4robotteam.github.io/
-                          "Veronica Corningstone"
-[magic school bot]:       https://walkervilleelementary.github.io/
-                          "Magic School Bot"
-[minimum viable product]: /robots/mvp/
-                          "Minimum Viable Product"
-[awesome-o]:              /robots/awesome-o/
-                          "Awesome-o"
-=======
 [competition rules]:        https://docs.google.com/document/d/1g9UG_ID7YxdN3Vdt_oRrXJgGzr4VSbbwLGS0zG9mbSA/
                             "ENPH 253 Robot Competition 2017 Rules"
 [competition surface]:      https://docs.google.com/presentation/d/1Zq1h-U5V65wfgOsXi52bYinM7WvM4npjl62TxhXiBRM/
                             "ENPH 253 Robot Competition 2017 Surface"
+[spectre]:                  /robots/spectre/
+                            "Spectre"
 [veronica corningstone]:    https://channel4robotteam.github.io/
                             "Veronica Corningstone"
 [pomme de terror]:          /robots/potato/
