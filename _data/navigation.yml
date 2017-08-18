@@ -71,7 +71,7 @@ robots/potato:
   - *robots
 
 robots/mvp:
-  - title: Minimal Viable Product
+  - title: Minimum Viable Product
     url: /robots/mvp/
   - title: Structure
     url: /robots/mvp/structure/

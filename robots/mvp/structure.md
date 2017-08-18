@@ -65,7 +65,7 @@ Similarly, the infrared sensor mounts each hold a QSD124 phototransistor that me
 Finally, we made battery mounts out of various materials just to keep the batteries in place, but they were not altogether necessary.
 
 [original chassis]: /assets/images/robots/IMG_20170707_172256.jpg
-[final raster]: /assets/images/robots/mvp/DSC_0173.jpg
+[final raster]: /assets/images/robots/mvp/DSC_0173.JPG
 [wheels and drivetrain]: /robots/mvp/components/#drivetrain
 [zipline]: /robots/mvp/components/#zipline
 [circuit boards]: /robots/mvp/electrical/#routing

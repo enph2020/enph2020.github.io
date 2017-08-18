@@ -33,6 +33,6 @@ The arm is responsible for picking up the pets and placing them in the bucket as
 ![The agent recovery arm. Servos for yaw and pitch control are internally housed][arm close up]
 
 [arm close up]: /assets/images/robots/mvp/IMG_20170726_134244.jpg
-[drive train close]: /assets/images/robots/mvp/DSC_0187.jpg
+[drive train close]: /assets/images/robots/mvp/DSC_0187.JPG
 [aev full]: /assets/images/robots/mvp/IMG_20170808_224926.jpg
-[elevator rear]: /assets/images/robots/mvp/DSC_0196.jpg
+[elevator rear]: /assets/images/robots/mvp/DSC_0196.JPG
