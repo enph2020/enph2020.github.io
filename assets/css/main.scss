@@ -4,6 +4,11 @@
 @charset "utf-8";
 @import "minimal-mistakes";
 
+.nav__sub-title {
+  margin: 0.5rem 0 0.1rem 0;
+  padding: 0.5rem 0 0.1rem 0;
+}
+
 #gallery {
   display: flex;
   flex-wrap: wrap;

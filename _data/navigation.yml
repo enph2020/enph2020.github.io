@@ -1,4 +1,3 @@
-# main links
 main:
   - title: "About"
     url: /about/
@@ -12,27 +11,35 @@ robots:
     url: /robots/
     children:
       - title: "Roberto"
+        url: https://projectroberto.github.io/projectroberto/
       - title: "Spectre"
-        url: /robots/spectre
+        url: /robots/spectre/
       - title: "Veronica Corningstone"
+        url: https://channel4robotteam.github.io/
       - title: "Pomme de Terror"
         url: /robots/potato/
       - title: "Lalo"
+        url: https://lalotherobot.github.io/
       - title: "Linel Glitchy"
       - title: "reneZ"
         url: /robots/renez/
       - title: "DACS"
-      - title: "Robo Erectus"
+        url: https://enph253dacs.wixsite.com/dacs
+      - title: "AVA"
+        url: https://avarobot.000webhostapp.com/
       - title: "Magic School Bot"
         url: https://walkervilleelementary.github.io/
       - title: "Minimum Viable Product"
         url: /robots/mvp/
       - title: "LOAF"
       - title: "Frankenbot"
+        url: https://frankenbot.github.io/
       - title: "Awesome-o"
         url: /robots/awesome-o/
-      - title: "Calvin"
+      - title: "CALVIN"
+        url: https://keenanmcconkey.github.io/CALVIN/
       - title: "The Wee Baby Seamus"
+        url: http://theweebabyseamusrobot.weebly.com/
 
 robots/spectre:
   - title: Mechanical

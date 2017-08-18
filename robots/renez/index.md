@@ -6,6 +6,8 @@ sidebar:
   nav: robots/renez
 ---
 
+**Official site:** <https://zenerenez.github.io/>
+
 Welcome to the project page of reneZ the robot! ReneZ was built by a group of 2nd year Engineering Physics students at the University of British Columbia, to compete in the 2017 ENPH 253 "Mission Impossi-Bots" Robot Competition.
 
 ![][reneZ]

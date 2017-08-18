@@ -1,38 +1,39 @@
+- id: sample
+  description: This is a sample gallery.
+  image_folder: /assets/images/
+  images:
+  - file: example.jpg
+    thumb: example_thumb.jpg
+    text: This is the text that appears above the image box.
+    caption: This is the text that appears underneath the lightbox.
+
 - id: robots/renez
   description: This is a gallery of images for reneZ!
   image_folder: /assets/images/robots/renez/
   images:
   - file: gallery1.jpg
     thumb: gallery1.jpg
-    text: Picture 1
     caption: Picture 1
   - file: gallery2.jpg
     thumb: gallery2.jpg
-    text: Picture 2
     caption: Picture 2
   - file: gallery3.jpg
     thumb: gallery3.jpg
-    text: Picture 3
     caption: Picture 3
   - file: gallery4.jpg
     thumb: gallery4.jpg
-    text: Picture 4
     caption: Picture 4
   - file: gallery5.jpg
     thumb: gallery5.jpg
-    text: Picture 5
     caption: Picture 5
   - file: gallery6.jpg
     thumb: gallery6.jpg
-    text: Picture 6
     caption: Picture 6
   - file: gallery7.png
     thumb: gallery7thumb.png
-    text: Picture 7
     caption: Picture 7
   - file: gallery8.png
     thumb: gallery8thumb.png
-    text: Picture 8
     caption: Picture 8
 
 - id: robots/awesome-o

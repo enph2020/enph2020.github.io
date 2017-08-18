@@ -18,7 +18,7 @@ Spectre features a simple 2-axis robotic arm system to retrieve toy pets and dep
 Full Onshape Model <a href="http://bit.ly/2w6FjKX">here</a></em>
 </p>
 <br>
-The arm is fabricated out of laser-cut MDF. We chose to use MDF because it can be easily modified to accommodate design changes without refabricating entire parts. Although acrylic and steel are stronger materials, MDF is sufficiently strong for picking up toy pets without warping or breaking. 
+The arm is fabricated out of laser-cut MDF. We chose to use MDF because it can be easily modified to accommodate design changes without refabricating entire parts. Although acrylic and steel are stronger materials, MDF is sufficiently strong for picking up toy pets without warping or breaking.
 
 ![Final claw](/assets/images/robots/spectre/claw-final.jpg)
 
@@ -30,14 +30,14 @@ The end effector has two features that improve its ability to pick up pets. The 
 
 ![Bex](/assets/images/robots/spectre/bex.jpg)
 
-Bex is designed to be an interface between the TINAH processor and all circuits. It is a hub that allows IR, H-Bridge and power regulator circuits to be plugged in on one side, and motor and TINAH connections on the other. 
-Bex is composed of two power rails on each side, with H-Bridges accessing the 16V power rail and the IR circuits using the +/- 6V rail. Voltage regulators for each rail sit directly below the circuits. Overall, Bex has minimized external connectors while making circuits modular and easily accessible. 
+Bex is designed to be an interface between the TINAH processor and all circuits. It is a hub that allows IR, H-Bridge and power regulator circuits to be plugged in on one side, and motor and TINAH connections on the other.
+Bex is composed of two power rails on each side, with H-Bridges accessing the 16V power rail and the IR circuits using the +/- 6V rail. Voltage regulators for each rail sit directly below the circuits. Overall, Bex has minimized external connectors while making circuits modular and easily accessible.
 
 ### [](){:name="h-bridges"} H-Bridges
 
 ![H-bridge](/assets/images/robots/spectre/hbridge.jpg)
 
-Spectre uses three H-Bridge circuits. The TINAH supplies a limited amount of current, which prompted external motor power circuitry to be made. Two H-Bridges are used for the drive train, one for each wheel. The third is used for winching the robot down the zipline. 
+Spectre uses three H-Bridge circuits. The TINAH supplies a limited amount of current, which prompted external motor power circuitry to be made. Two H-Bridges are used for the drive train, one for each wheel. The third is used for winching the robot down the zipline.
 
 ![h-bridge diagram](/assets/images/robots/spectre/zener_h_bridge.png)
 
@@ -45,11 +45,11 @@ Spectre uses three H-Bridge circuits. The TINAH supplies a limited amount of cur
 
 ![filter](/assets/images/robots/spectre/filter.jpg)
 
-Spectre uses QSD sensors to detect the infrared signals at the gate and the zipline. Circuitry was simplified down to a sequence of first-order active bandpass filter, amplifier, and a peak follower to convert analog to DC voltage. 
+Spectre uses QSD sensors to detect the infrared signals at the gate and the zipline. Circuitry was simplified down to a sequence of first-order active bandpass filter, amplifier, and a peak follower to convert analog to DC voltage.
 
 ![filter diagram](/assets/images/robots/spectre/10k_filter.png)
 
-Circuits for 10kHz and 1kHz detection are separated to conserve space. This allows us to use different QSD sensors for testing. A QSD design, shown below uses the switching properties of the transistor to change the intensity of the light emitted from the LED. This design was used to help us determine the optimal location to place the QSD on Spectre, since the intensity of the LED would vary based on the viewing angle of the QSD. 
+Circuits for 10kHz and 1kHz detection are separated to conserve space. This allows us to use different QSD sensors for testing. A QSD design, shown below uses the switching properties of the transistor to change the intensity of the light emitted from the LED. This design was used to help us determine the optimal location to place the QSD on Spectre, since the intensity of the LED would vary based on the viewing angle of the QSD.
 
 ![qsd](/assets/images/robots/spectre/QSD.png)
 

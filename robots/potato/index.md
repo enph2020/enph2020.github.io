@@ -6,6 +6,8 @@ sidebar:
   nav: robots/potato
 ---
 
+**Official site:** <https://kaitaitong.github.io/pommedeterror/>
+
 ## The winning team of the 2017 Robot Competition!
 
 ![][winning team]

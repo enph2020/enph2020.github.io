@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "UBC Fizz"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "The official unofficial UBC Fizz author."
+  bio              :
   location         : "Vancouver, Canada"
   email            :
   uri              :
