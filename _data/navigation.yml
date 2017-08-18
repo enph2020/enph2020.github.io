@@ -16,9 +16,11 @@ robots:
         url: /robots/spectre
       - title: "Veronica Corningstone"
       - title: "Pomme de Terror"
+        url: /robots/potato/
       - title: "Lalo"
       - title: "Linel Glitchy"
       - title: "reneZ"
+        url: /robots/renez/
       - title: "DACS"
       - title: "Robo Erectus"
       - title: "Magic School Bot"
@@ -60,27 +62,66 @@ robots/spectre:
       url: /robots/spectre/#encoders
   - *robots
 
-robots/mvp:
-  - title: Structural
-    url: /robots/mvp/structural/
+robots/renez:
+  - title: reneZ
+    url: /robots/renez/
+    children:
+      - title: Official Site
+        url: https://zenerenez.github.io/
+  - title: Gallery
+    url: /robots/renez/gallery/
+  - title: Mechanical
+    url: /robots/renez/mechanical/
+  - title: Electrical
+    url: /robots/renez/electrical/
+  - title: Software
+    url: /robots/renez/software/
+  - *robots
+
+robots/potato:
+  - title: Pomme de Terror
+    url: /robots/potato/
+    children:
+      - title: Official Site
+        url: https://kaitaitong.github.io/pommedeterror/
+  - title: Mechanical
+    url: /robots/potato/mechanical/
     children:
       - title: "Chassis"
-        url: /robots/mvp/structural/#chassis
+        url: /robots/potato/mechanical/#chassis
+      - title: "Claw"
+        url: /robots/potato/mechanical/#claw
+      - title: "Lifting Mechanism"
+        url: /robots/potato/mechanical/#lift
+  - title: Electrical
+    url: /robots/potato/electrical/
+  - title: Software
+    url: /robots/potato/software/
+  - *robots
+
+robots/mvp:
+  - title: Minimum Viable Product
+    url: /robots/mvp/
+  - title: Structure
+    url: /robots/mvp/structure/
+    children:
+      - title: "Chassis"
+        url: /robots/mvp/structure/#chassis
       - title: "eBay"
-        url: /robots/mvp/structural/#ebay
+        url: /robots/mvp/structure/#ebay
       - title: "Mounts"
-        url: /robots/mvp/structural/#mounts
-      - title: "Zipline"
-        url: /robots/mvp/structural/#zipline
-  - title: Mechanical
-    url: /robots/mvp/mechanical/
+        url: /robots/mvp/structure/#mounts
+  - title: Components
+    url: /robots/mvp/components/
     children:
       - title: "Drivetrain"
-        url: /robots/mvp/mechanical/#drivetrain
+        url: /robots/mvp/components/#drivetrain
+      - title: "Agent Evacuation Vehicle"
+        url: /robots/mvp/components/#aev
       - title: "Elevator"
-        url: /robots/mvp/mechanical/#elevator
+        url: /robots/mvp/components/#elevator
       - title: "Arm"
-        url: /robots/mvp/mechanical/#arm
+        url: /robots/mvp/components/#arm
   - title: Electrical
     url: /robots/mvp/electrical/
     children:
@@ -97,37 +138,38 @@ robots/mvp:
   - *robots
 
 robots/awesome-o:
-  - title: Structural
-    url: /robots/awesome-o/structural/
-    children:
-      - title: "Chassis"
-        url: /robots/awesome-o/structural/#chassis
-      - title: "eBay"
-        url: /robots/awesome-o/structural/#ebay
-      - title: "Mounts"
-        url: /robots/awesome-o/structural/#mounts
-      - title: "Zipline"
-        url: /robots/awesome-o/structural/#zipline
+  - title: Awesome-O
+    url: /robots/awesome-o/
+  - title: Gallery
+    url: /robots/awesome-o/gallery/
   - title: Mechanical
     url: /robots/awesome-o/mechanical/
     children:
-      - title: "Drivetrain"
-        url: /robots/awesome-o/mechanical/#drivetrain
-      - title: "Elevator"
-        url: /robots/awesome-o/mechanical/#elevator
-      - title: "Arm"
-        url: /robots/awesome-o/mechanical/#arm
+      - title: "Chassis"
+        url: /robots/awesome-o/mechanical/#chassis
+      - title: "Boom"
+        url: /robots/awesome-o/mechanical/#boom
+      - title: "Trolley"
+        url: /robots/awesome-o/mechanical/#trolley
+      - title: "Claw"
+        url: /robots/awesome-o/mechanical/#claw
+      - title: "Lift"
+        url: /robots/awesome-o/mechanical/#lift
   - title: Electrical
     url: /robots/awesome-o/electrical/
     children:
+      - title: "TINAH"
+        url: /robots/awesome-o/electrical/#tinah
+      - title: "Power Supply"
+        url: /robots/awesome-o/electrical/#power
       - title: "H-Bridges"
         url: /robots/awesome-o/electrical/#h-bridges
-      - title: "Routing"
-        url: /robots/awesome-o/electrical/#routing
       - title: "IR Filter"
         url: /robots/awesome-o/electrical/#ir-filter
-      - title: "Encoders"
-        url: /robots/awesome-o/electrical/#encoders
+      - title: "Sensors"
+        url: /robots/awesome-o/electrical/#sensors
   - title: Software
     url: /robots/awesome-o/software/
-  - *robots
+    children:
+      - title: "State Diagram"
+        url: /robots/awesome-o/software/#state

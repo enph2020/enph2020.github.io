@@ -5,11 +5,11 @@ permalink: /robots/awesome-o/
 sidebar:
   nav: robots/awesome-o
 ---
-This is the official page for Team 14's robot, Awesome-o.
 
-![A purple 3D-printed hemispherical skid for the front of our robot. When flipped upside-down, the countersunk boltholes resemble eyes on a face, so angry eyebrows and a mouth were drawn on it with a black sharpie. The skid is held against a backdrop of MVP members reattaching the arm to the chassis.][angry purple skid]
+During the ENPH 253 Robot Design Competition, our team designed, built and deployed an autonomous robot tasked with navigating an obstacle course. The robot was required to pass through an alarmed door, traversing a narrow ramp, then retrievie six plastic toys from a large tub and deploy them down a zipline. Over the course of 6 weeks, we were able to produce a working robot which could overcome all aspects of this course.
 
-![A white 3D-printed hemispherical skid for the front of our robot, with about a quarter of the hemisphere sliced off perpendicular to its base. When flipped upside-down, the bolts through the skid resemble eyes on a face and the sliced off plane resembles a mouth, so angry eyebrows were drawn on it with a blue marker. The skid is resting on a heavily cratered black surface.][angry white skid]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pvgh8AvOyz8" frameborder="0" allowfullscreen></iframe>
 
-[angry purple skid]: /assets/images/robots/awesome-o/angry_purple_skid.jpg
-[angry white skid]: /assets/images/robots/awesome-o/angry_white_skid.jpg
+This site outlines the specifications of our robot, as well as the design and manufacturing process which made our robot a success.
+
+If you happen to be a current ENPH 253 student and are reading this report, out of respect for the competition and the work which we put into this project, please do not use any of the ideas outlined in this document without giving proper reference to its conceivers.
