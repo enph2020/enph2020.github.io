@@ -47,6 +47,8 @@ robots/spectre:
     children:
     - title: "Chassis"
       url: /robots/spectre/#chassis
+    - title: "Lift"
+      url: /robots/spectre/#lift
     - title: "Robotic Arm"
       url: /robots/spectre/#arm
   - title: Electrical
@@ -67,6 +69,8 @@ robots/spectre:
       url: /robots/spectre/#control
     - title: "Encoders"
       url: /robots/spectre/#encoders
+  - title: Our Team
+    url: /robots/spectre/#team
   - *robots
 
 robots/renez:

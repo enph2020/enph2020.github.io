@@ -5,9 +5,27 @@ permalink: /robots/spectre/
 sidebar:
   nav: robots/spectre
 ---
-
+![Spectre](/assets/images/robots/spectre/robot.jpg)
+<iframe width="420" height="315" src="https://www.youtube.com/embed/dD2JJE9GXSs" frameborder="0" allowfullscreen></iframe>
 ## [](){:name="mechanical"} Mechanical
 ### [](){:name="chassis"} Chassis
+Under construction
+### [](){:name="lift"} Lift
+Spectre uses a lift mechanism that hoists the entire robot onto the zipline. Given the comparatively high weight of the robot, this design choice had some unique challenges associated with it.
+
+![Sliding down the zipline](/assets/images/robots/spectre/rail.jpg)
+
+Due to height constraints, the lift mechanism is stowed for the first portion of the obstacle course. A hook-like “pin” keeps the mechanism folded over in this position. When unstowing, a MicroServo pulls out the pin and allows the lift to extend itself to its full height via a spring mechanism.
+
+![Unstowing the lift](/assets/images/robots/spectre/surprise.gif)
+
+A linear rail is connected to the base of the chassis, through which a braid of Kevlar string is threaded. The Kevlar is connected to a geared motor, which winches the robot up as it turns.
+
+<iframe width="420" height="315" src="https://drive.google.com/file/d/0Bz-v_bAt9n4AV1V5RVpndjlLT1k/preview" frameborder="0" allowfullscreen></iframe>
+
+After extending the lift mechanism, the robot lifts itself onto the zipline and slides down across the obstacle course.
+
+![Sliding down the zipline](/assets/images/robots/spectre/sliding.gif)
 
 ### [](){:name="arm"} Robotic Arm
 Spectre features a simple 2-axis robotic arm system to retrieve toy pets and deposit them in the robot. As seen below, one axis allows the arm to pivot outward and inward, and another allows the arm to grip toys. Each axis is controlled by an HK15138 servo, which outputs a maximum of 42 N-cm of torque.
