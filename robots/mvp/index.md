@@ -12,5 +12,5 @@ This is the official page for Team 11's robot, Minimum Viable Product.
 
 ![The team behind Minimum Viable Product][team picture]
 
-[team picture]: /assets/images/robots/mvp/DSC_0156.JPG
-[front left view]: /assets/images/robots/mvp/DSC_0175.JPG
+[team picture]: /assets/images/robots/mvp/DSC_0156.jpg
+[front left view]: /assets/images/robots/mvp/DSC_0175.jpg
