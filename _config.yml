@@ -126,6 +126,7 @@ exclude:
   - Capfile
   - CHANGELOG
   - config
+  - config.ru
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -133,6 +134,7 @@ exclude:
   - log
   - node_modules
   - package.json
+  - Procfile
   - Rakefile
   - README
   - tmp
@@ -178,6 +180,7 @@ timezone: "America/Vancouver"
 
 # Plugins
 gems:
+  - kramdown
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
