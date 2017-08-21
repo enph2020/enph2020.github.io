@@ -41,6 +41,6 @@ Due to large horizontal space taken by the pulley system, we decided to use a fo
 Four bar linkage system with gear ratio of 1:1.5 is able to lift 350g (including basket weight) ~15cm.
 
 [chassis final]: /assets/images/robots/potato/FinalPrototypeCAD.png
-[chassis front]: /assets/images/robots/potato/ChassiFrontView.JPG
-[chassis electrical]: /assets/images/robots/potato/Elec.JPG
-[claw]: /assets/images/robots/potato/claw.JPG
+[chassis front]: /assets/images/robots/potato/ChassiFrontView.jpg
+[chassis electrical]: /assets/images/robots/potato/Elec.jpg
+[claw]: /assets/images/robots/potato/claw.jpg

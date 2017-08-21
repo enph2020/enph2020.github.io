@@ -17,4 +17,4 @@ The purpose of IR was to know when the gate is unalarmed.
 IR light is initially sensed by phototransistor, QSD124. DC Offset block allows us to remove the Offset from the raw signal. Amplification Block allows us to amplify the signal. Filteration Block allows us to cut out the all undesired frequency. Peak Detection Block allows us only singal at peak amplitude.
 
 [ir detector]: /assets/images/robots/potato/FirstIRDetector.jpg
-[ir diagram]: /assets/images/robots/potato/IRSensor_Diagram.PNG
+[ir diagram]: /assets/images/robots/potato/IRSensor_Diagram.png
