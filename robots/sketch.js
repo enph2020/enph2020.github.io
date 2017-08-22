@@ -27,7 +27,7 @@ function init(w, h) {
 
     g_camera = new THREE.PerspectiveCamera(90, w / h, 0.01, 1000000);
     g_renderer = new THREE.WebGLRenderer();
-    g_renderer.setClearColor(new THREE.Color(0xEEEEEE));
+    g_renderer.setClearColor(new THREE.Color(0xFFFFFF));
     g_renderer.setPixelRatio(w / h);
     g_renderer.setSize(w, h);
 
@@ -39,6 +39,9 @@ function init(w, h) {
         g_controls.enableDamping = true;
         g_controls.dampingFactor = 0.2;
         g_controls.rotateSpeed = 0.3;
+
+        g_controls.autoRotate = true;
+        g_controls.autoRotateSpeed = -0.07;
     } else {
         g_controls.addEventListener('change', render); // remove when using animation loop
     }
@@ -60,10 +63,12 @@ function setup() {
     // init(window.innerWidth, window.innerHeight);
     // var container = document.getElementById('GLOutput');
     // console.log(container);
-    init($('GLOutput').width(), $('GLOutput').height()); 
+    init($('#GLOutput').width(), $('#GLOutput').height());
+    // console.log($('#GLOutput').width());
+    // console.log($('#GLOutput').height());
     // init(800, 480);
 
-    g_camera.position.set(0, 0, 200);
+    g_camera.position.set(0, 100, 200);
     g_camera.lookAt(g_scene.position);
 
     // lights
@@ -72,9 +77,10 @@ function setup() {
     // directionalLight.castShadow = true;
     // g_scene.add(directionalLight)
     // g_scene.add(new THREE.AmbientLight(0xFFFFFF, 1.0));
-    g_scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
-    addShadowedLight( 100, 100, 100, 0xffffff, 1.35 );
-    addShadowedLight( 50, 100, -100, 0xffaa00, 1 );
+    // g_scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
+    g_scene.add( new THREE.AmbientLight( 0xFFFFFF, 0.5 ) );
+    addShadowedLight( 100, 100, 100, 0xFFFFFF, 1.2 );
+    addShadowedLight( 50, 100, -100, 0xFFFFFF, 0.75 );
 
     // Ground plane
     var plane = new THREE.Mesh(
@@ -102,14 +108,14 @@ function setup() {
     // Loader object
     var loader = new THREE.STLLoader();
     loader.load('surface.stl', function(geom) {
-        // var material = new THREE.MeshStandardMaterial({
-        //     color: 0x4499FF,
-        //     // specular: 0x222222,
-        //     // shininess: 200,
-        //     roughness: 0.5,
-        //     metalness: 0.2
-        // });
-        var material = new THREE.MeshLambertMaterial({ color:0x448866 });
+        var material = new THREE.MeshStandardMaterial({
+            color: 0x4499FF,
+            // specular: 0x222222,
+            // shininess: 200,
+            roughness: 0.5,
+            metalness: 0.2
+        });
+        // var material = new THREE.MeshLambertMaterial({ color:0x448866 });
         var mesh = new THREE.Mesh(geom, material);
         mesh.castShadow = true;
         mesh.receiveShadow = true;
@@ -123,11 +129,13 @@ function setup() {
 
 
     // random sphere object
-    // var testSphere = new THREE.Mesh(
-    //     new THREE.SphereGeometry(100, 32, 32),
-    //     new THREE.MeshStandardMaterial()
-    // );
-    // g_scene.add(testSphere);
+    var testSphere = new THREE.Mesh(
+        new THREE.SphereGeometry(10, 32, 32),
+        new THREE.MeshStandardMaterial()
+    );
+    testSphere.position.set(0, 30, 0);
+    testSphere.castShadow = true;
+    g_scene.add(testSphere);
 }
 
 function draw() {
@@ -154,17 +162,18 @@ function addShadowedLight( x, y, z, color, intensity ) {
     directionalLight.position.set( x, y, z );
     g_scene.add( directionalLight );
     directionalLight.castShadow = true;
-    var d = 1;
+    var d = 1000;
     directionalLight.shadow.camera.left = -d;
     directionalLight.shadow.camera.right = d;
     directionalLight.shadow.camera.top = d;
     directionalLight.shadow.camera.bottom = -d;
     directionalLight.shadow.camera.near = 1;
-    directionalLight.shadow.camera.far = 4000;
-    directionalLight.shadow.mapSize.width = 1024;
-    directionalLight.shadow.mapSize.height = 1024;
-    directionalLight.shadow.bias = -0.005;
+    directionalLight.shadow.camera.far = 500;
+    // directionalLight.shadow.camera.visible = true;
+    directionalLight.shadow.mapSize.width = 4096;
+    directionalLight.shadow.mapSize.height = 4096;
+    directionalLight.shadow.bias = 0.0001;
 
-    var helper = new THREE.DirectionalLightHelper( directionalLight, 5 ); 
-    g_scene.add( helper );
+    // var helper = new THREE.DirectionalLightHelper( directionalLight, 5 ); 
+    // g_scene.add( helper );
 }
