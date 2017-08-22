@@ -60,7 +60,7 @@ function setup() {
     // init(window.innerWidth, window.innerHeight);
     // var container = document.getElementById('GLOutput');
     // console.log(container);
-    init($('GLOutput').width(), $('GLOutput').height()); 
+    init($('#GLOutput').width(), $('#GLOutput').height()); 
     // init(800, 480);
 
     g_camera.position.set(0, 0, 200);
