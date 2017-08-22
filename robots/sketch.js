@@ -168,6 +168,7 @@ function addShadowedLight( x, y, z, color, intensity ) {
     directionalLight.shadow.camera.top = d;
     directionalLight.shadow.camera.bottom = -d;
     directionalLight.shadow.camera.near = 1;
+<<<<<<< HEAD
     directionalLight.shadow.camera.far = 500;
     // directionalLight.shadow.camera.visible = true;
     directionalLight.shadow.mapSize.width = 4096;
@@ -177,3 +178,13 @@ function addShadowedLight( x, y, z, color, intensity ) {
     // var helper = new THREE.DirectionalLightHelper( directionalLight, 5 ); 
     // g_scene.add( helper );
 }
+=======
+    directionalLight.shadow.camera.far = 4000;
+    directionalLight.shadow.mapSize.width = 1024;
+    directionalLight.shadow.mapSize.height = 1024;
+    directionalLight.shadow.bias = -0.005;
+
+    var helper = new THREE.DirectionalLightHelper( directionalLight, 5 ); 
+    g_scene.add( helper );
+}
+>>>>>>> production/master
