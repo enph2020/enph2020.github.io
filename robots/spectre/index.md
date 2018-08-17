@@ -28,7 +28,7 @@ After extending the lift mechanism, the robot lifts itself onto the zipline and 
 ![Sliding down the zipline](/assets/images/robots/spectre/sliding.gif)
 
 ### [](){:name="arm"} Robotic Arm
-Spectre features a simple 2-axis robotic arm system to retrieve toy pets and deposit them in the robot. As seen below, one axis allows the arm to pivot outward and inward, and another allows the arm to grip toys. Each axis is controlled by an HK15138 servo, which outputs a maximum of 42 N-cm of torque.
+Spectre features two identical robotic arms to retrieve toy pets and deposit them in the robot's collection bay. As seen below, for each arm, one axis allows the arm to pivot outward and inward, and another allows the arm to grip toys. Each axis is controlled by an HK15138 servo, which outputs a maximum of 42 N-cm of torque.
 
 ![CAD model of claw](/assets/images/robots/spectre/claw-design.png)
 <p style="margin: auto; text-align: center;">
